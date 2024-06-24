@@ -1,98 +1,177 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: gray;
-    font-family: system-ui, sans-serif;
-    margin: 0;
-  }
-  
-  nav {
-    background-color: white;
-    padding: 8px 16px;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  section {
-    height: 400px;
-    background-color: black;
-    color: white;
-    padding: 24px 72px;
-  }
-  
-  h1,
-  h2 {
-    text-align: center;
-  }
-  
-  h1 {
-    margin-top: 0;
-    font-size: 32px;
-  }
-  
-  h2 {
-    font-size: 16px;
-    margin-bottom: 0;
-  }
-  
-  input {
-    height: 58px;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 29px;
-    border: 0px;
-    padding: 0 24px;
-  }
-  
-  main {
-    background-color: white;
-    padding: 32px 72px;
-  }
-  
-  nav button {
-    background-color: #ea4c89;
-    border-radius: 8px;
-    padding: 10px 16px;
-    border: 0;
-    color: #ffffff;
-    font-weight: 500;
-  }
-  
-  .img-placeholder {
-    width: 355px;
-    height: 270px;
-    background-color: gray;
-    border-radius: 8px;
-  }
-  
-  .card-footer {
-    font-size: 14px;
-  }
-  
-  .card-footer * {
-    margin-top: 8px;
-  }
-  
-  #subnav {
-    padding: 32px 72px 0;
-    background-color: white;
-  }
-  
-  #subnav button {
-    border-radius: 8px;
-    padding: 10px 16px;
-    border: 1px solid black;
-    background-color: white;
-  }
-  
-  #trending p {
-    background-color: white;
-    color: black;
-    border-radius: 50px;
-    padding: 6px 15px;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  /* border: 2px solid red; */
+}
+
+nav {
+  background-color: white;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border: 4px solid gray;
+  height: 40px;
+  /* outline: 2px solid green; */
+}
+
+#destinations {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid green;
+  font-size: 10px;
+  font-weight: light;
+  outline: 1px solid green;
+  text-align: center;
+  padding: 1px;
+
+  /* height: 4px; */
+  /* width: 0px; */
+}
+
+input::placeholder {
+  /* border: 1px solid blue; */
+  font-size: 10px;
+  opacity: 10px;
+  color: black;
+}
+
+#actions {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  outline: 1px solid red;
+  font-size: 10px;
+  text-align: center;
+  gap: 10px;
+}
+
+#hero {
+  border: 4px solid gray;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+#headers {
+  border: 2px solid red;
+  outline: 1px solid red;
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  height: 400px;
+  background-color: black;
+  color: white;
+  padding: 24px 72px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 1cqb;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 10px;
+  margin-bottom: 14px;
+  /* height: 2px; */
+}
+
+input {
+  height: 58px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 29px;
+  border: 0px;
+  padding: 0 24px;
+}
+
+main {
+  background-color: white;
+  padding: 32px 72px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+  border: 0px;
+}
+
+nav button {
+  background-color: #ea4c89;
+  border-radius: 10px;
+  padding: 2px 4px;
+  border: 0;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 10px;
+  text-align: center;
+}
+
+.img-placeholder {
+  width: 355px;
+  height: 270px;
+  background-color: gray;
+  border-radius: 8px;
+}
+
+.card-footer {
+  font-size: 14px;
+  display: flex;
+  gap: 230px;
+}
+
+.card-footer * {
+  margin-top: 8px;
+}
+
+#subnav {
+  padding: 32px 72px 0;
+  background-color: white;
+  text-align: center;
+  /* justify-content: space-between; */
+}
+
+#sort {
+  /* text-align: left; */
+}
+
+#subnav button {
+  border-radius: 8px;
+  padding: 10px 16px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#trending {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#trending p {
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  padding: 6px 15px;
+  /* display: flex; */
+  /* gap: 20px; */
+  /* border-radius: 10px; */
+  /* text-align: center; */
+  /* align-items: center; */
+  /* justify-content:space-around */
+}
